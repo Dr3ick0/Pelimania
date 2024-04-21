@@ -742,10 +742,10 @@ body{
 
 }
 
-/*ESTILOS ESCRITORIO Detalle the_Marvels*/
-.mainThe_marvels{
+/*ESTILOS ESCRITORIO Detalle the marvels*/
+.mainDetalle{
     
-    .detalle3{
+    .theMarvels{
         padding-top:50px;
         background:linear-gradient(to right top, #6d6969a7, #6d6969a7),url("../assets/img/peli_3.jpg");
         background-size: cover;
