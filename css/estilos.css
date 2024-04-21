@@ -988,3 +988,8 @@ hr{
     margin: 0 auto;
     margin-top: 40px;
 }
+
+.carousel-control-next{
+    color: #181419!important;
+
+}
