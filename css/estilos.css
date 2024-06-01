@@ -11,6 +11,209 @@
     75% { transform: translate(-5px, 5px) rotate(-5deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
 }
+
+
+.mainRegistro{
+    background-color: var(--color1);
+    color: var(--color3);
+    width: 100%;
+    display: flex;
+    /*flex-direction: column;
+    /* height: 650px; */
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* margin: 20px 20px; */
+    border: 2px solid var(--color1);
+    /* background-color: #6d2828; */
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    color: #d88c00;
+    text-shadow: 5px 5px 5px 5px black;
+}
+
+form {
+    background-color: rgb(35, 35, 35);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(236, 233, 233, 0.61);
+    /* box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8); */
+    /* display: grid; */
+    /* align-content: space-between; */
+    width: 400px;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo-form {
+    position: relative;
+    margin: 10px;
+}
+
+input {
+    background-color: white;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0px 15px 0px;
+}
+
+input:focus:hover {
+    outline: none;
+    color: black;
+    background-color: #d88c00;
+}
+
+label {
+    font-size: 16px;
+
+}
+
+.grupo-genero,
+textarea,
+select,
+button {
+    background-color: white;
+    font-size: 16px;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 0px 0px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.check {
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    text-align: center;
+}
+
+.boton-registro {
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    width: 100%;
+    /* transition: transform 0.3s; */
+    background-color: #d88c00;
+    font-size: 16px;
+    margin: 20px 0px 0px 0px;
+}
+
+.boton-registro:hover {
+    transform: scale(1.05);
+    font-size: large;
+}
+
+.grupo-form label::before {
+    content: "* ";
+    color: #d88c00;
+}
+
+/* @media (max-width: 768px) {
+    .form {
+        flex-direction: column;
+    } */
+
+.warning {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #d88c00;
+    /* padding-top: 20px; */
+}
+
+.respuesta {
+    margin: 30px 0px;
+    text-align: center;
+    color: wh;
+}
+
+.datos-error {
+    text-align: center;
+}
+
+
+/* ESTILOS CONTACTO */
+
+.mensGracias {
+    margin: 20px;
+    text-align: center;
+    color: #d88c00;
+    background-color: rgb(35, 35, 35);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(236, 233, 233, 0.61);
+}
+
+/* ESTILOS DE TERMINOS */
+
+.terminos-caja{
+    background-color: black;
+    margin: 20px;
+    padding: 20px;
+    color: rgb(214, 211, 211);
+}
+
+#tarjetaregistro,
+#form-consultas{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+}
+
+/*#form-consultas{
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+:root {
+    /* colores */
+    --color1: #000000;
+    --color2: #141414;
+    --color3: white;
+    --color4: #3f576e6a;
+    --color5: #1c1f21ee;
+    --color6: #051227d5;
+    /* tipografia */
+    --fs-xl: 36px;
+    --fs-l: 28px;
+    --fs-m: 20px;
+    --fs-s: 16px;
+    --fs-xs: 12px;
+    /* fuentes */
+    --ff-1: 'Space Grotesk', sans-serif;
+    --ff-2: 'Roboto', sans-serif;
+    --ff-3: 'Montserrat', sans-serif;
+    /* negrita */
+    --fw-7: 700;
+    --fw-6: 600;
+    --fw-5: 500;
+    /* suavizado en renderizado de texto */
+    --webkit-font-smoothing: antialiased;
+}
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -1033,96 +1236,7 @@ body{
 
 
 /*ESTILOS ESCRITORIO PARA PAGINA Registrarse */
-.bodyRegistrarse{
-    height: 100vh;
-    background:linear-gradient(to right top, #24242473,#24242473),url("../assets/img/ted.jpg");
-    background-size: cover;
-    background-position: center;
-    .headerRegistrarse{
-        color:#ffffff;
-        height: 8vh;
-        padding:30px;
-        .anclaLogo{
-            text-decoration: none;
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 1.2rem;
-             /*animacion hover*/
-            &:hover{
-                animation: tilt-n-move-shaking 0.25s infinite;
-            }
-        }
-    }
-    .main{
-         /*seccion de registrarse.html*/
-        .seccionRegistrarse{
-            background-color:rgb(42, 42, 42);
-            width: 30%;
-            margin:0 auto;
-            border-radius: 5px;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction:column;
-            justify-content: center;
-            align-items: center;
-            height: 90vh;
-            font-size:1.2rem;
-            .tituloRegistrarse{
-                font-size: 2.5rem;
-                font-weight: 700;
-                margin-bottom: 20px;
-            }
-            /*seleccionar todos los input menos el checkbox*/
-            form{
-                width: 100%;
-                padding:40px;
-                input:not(.check,.boton),select{
-                    width: 100%;
-                    margin-bottom: 20px;
-                    height: 40px;
-                    padding: 0px 20px;
-                    font-size: 1.2rem;
-                    border-radius: 20px;
-                    border: 2px solid #9f3647;
-                    background-color: #333333;
-                    outline: none;
-                    color:white;
-                }
-                .terminos{
-                    font-size: 0.8rem;
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 20px;
-                    .textoCheck{
-                        margin-left: 10px;
-                    }
-                }
-                .boton{
-                    width: 87%;
-                    box-sizing: content-box;
-                    background-color:#9f3647;
-                    border: 2px solid #9f3647;
-                    color: #ffffff;
-                    padding: 1rem 1rem;
-                    border-radius: 5px;
-                    font-size: 1rem;
-                    font-weight: 500;
-                   
-                }
-                .ayuda{
-                    margin-top:40px;
-                    font-size: 1rem;
-                    text-decoration: none;
-                    color: #787878;
-                    font-weight:400;
-                   
-                }
-            }
-           
-        }
-   
-    }
-}
+
 
 /*media querys para mobile PAGINA registrarse*/
 @media (max-width: 1200px) {
