@@ -14,26 +14,18 @@
 
 
 .mainRegistro{
-    background-color: var(--color1);
-    color: var(--color3);
+    
     width: 100%;
     display: flex;
-    /*flex-direction: column;
-    /* height: 650px; */
     justify-content: center;
-    /* align-items: center; */
-    /* align-content: center; */
-    /* flex-direction: column; */
-    /* flex-wrap: wrap; */
-    /* margin: 20px 20px; */
-    border: 2px solid var(--color1);
-    /* background-color: #6d2828; */
+    background-color: #5f5f5f;
+    
 }
 
 h1 {
     text-align: center;
     font-weight: 700;
-    color: #d88c00;
+    color:#9f3647;
     text-shadow: 5px 5px 5px 5px black;
 }
 
@@ -42,9 +34,7 @@ form {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(236, 233, 233, 0.61);
-    /* box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8); */
-    /* display: grid; */
-    /* align-content: space-between; */
+
     width: 400px;
 }
 
@@ -72,7 +62,7 @@ input {
 input:focus:hover {
     outline: none;
     color: black;
-    background-color: #d88c00;
+    background-color: #9f3647;
 }
 
 label {
@@ -95,8 +85,7 @@ button {
 }
 
 .check {
-    /* display: inline-block; */
-    /* vertical-align: middle; */
+   
     text-align: center;
 }
 
@@ -108,7 +97,7 @@ button {
     /* cursor: pointer; */
     width: 100%;
     /* transition: transform 0.3s; */
-    background-color: #d88c00;
+    background-color:#9f3647 ;
     font-size: 16px;
     margin: 20px 0px 0px 0px;
 }
@@ -120,26 +109,22 @@ button {
 
 .grupo-form label::before {
     content: "* ";
-    color: #d88c00;
+    color:#9f3647;
 }
 
-/* @media (max-width: 768px) {
-    .form {
-        flex-direction: column;
-    } */
 
 .warning {
     width: 200px;
     text-align: center;
     margin: auto;
-    color: #d88c00;
+    color:#9f3647 ;
     /* padding-top: 20px; */
 }
 
 .respuesta {
     margin: 30px 0px;
     text-align: center;
-    color: wh;
+  
 }
 
 .datos-error {
@@ -150,10 +135,11 @@ button {
 /* ESTILOS CONTACTO */
 
 .mensGracias {
-    margin: 20px;
+    /*REVISAR      a veces aparece y otras no */
+    margin-top: 200px;
     text-align: center;
-    color: #d88c00;
-    background-color: rgb(35, 35, 35);
+    color:#9f3647 ;
+    background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(236, 233, 233, 0.61);
@@ -175,43 +161,6 @@ button {
     
 }
 
-/*#form-consultas{
-    margin-top: 80px;
-    margin-bottom: 30px;
-}
-
-
-
-
-
-
-
-
-:root {
-    /* colores */
-    --color1: #000000;
-    --color2: #141414;
-    --color3: white;
-    --color4: #3f576e6a;
-    --color5: #1c1f21ee;
-    --color6: #051227d5;
-    /* tipografia */
-    --fs-xl: 36px;
-    --fs-l: 28px;
-    --fs-m: 20px;
-    --fs-s: 16px;
-    --fs-xs: 12px;
-    /* fuentes */
-    --ff-1: 'Space Grotesk', sans-serif;
-    --ff-2: 'Roboto', sans-serif;
-    --ff-3: 'Montserrat', sans-serif;
-    /* negrita */
-    --fw-7: 700;
-    --fw-6: 600;
-    --fw-5: 500;
-    /* suavizado en renderizado de texto */
-    --webkit-font-smoothing: antialiased;
-}
 
 
 /* width */

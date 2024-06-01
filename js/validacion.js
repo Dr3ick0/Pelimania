@@ -16,7 +16,7 @@ formulario.addEventListener("submit", function (event) {
     if (hoy.getMonth() < fechaNacimiento.getMonth() || (hoy.getMonth() === fechaNacimiento.getMonth() && hoy.getDate() < fechaNacimiento.getDate())) {edad--;
     }
 
-    // Si tiene 18 años SI y si no no puede
+    
     if (edad >= 18) {
         datosError.textContent = "";
         respuesta.textContent = `Bienvenido/a ${nombre} ${apellido}. Gracias por registrarte.`;
